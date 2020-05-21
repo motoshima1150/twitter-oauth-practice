@@ -4,25 +4,8 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-*.gem
-*.rbc
-/.config
-/coverage/
-/InstalledFiles
-/pkg/
-/spec/reports/
-/spec/examples.txt
-/test/tmp/
-/test/version_tmp/
-/tmp/
-.keep
-
-# Used by dotenv library to load environment variables.
-# Environment normalization:
-/.bundle/
-/vendor/bundle
-/lib/bundler/man/
-/node_modules
+# Ignore bundler config.
+/.bundle
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -50,6 +33,9 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-# CI Environment
-/.env
-
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
